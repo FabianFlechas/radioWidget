@@ -8,7 +8,7 @@
 
 
 .Badge {
-  background: #FFFFFF;
+  background: #222245;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
   border-radius: 8px 8px 8px 8px;
   overflow: hidden;
@@ -18,7 +18,7 @@
 .Badge__header {
   padding: 0.5rem 0;
   height: 10px;
-  background: #2277A1;
+  background: #61C0ED;
   display: flex;
   justify-content: center;
 }
@@ -28,6 +28,7 @@
   justify-content: center;
   align-items: center;
   padding: 7px;
+  color: #dcdce4;
 }
 
 .Badge__section__info {
@@ -36,8 +37,8 @@
   justify-content: center;
   text-justify: auto;
   align-items: center;
-  background: #F4F4F7;
-  color: #646470;
+  background: #68688b;
+  color: #ffffff;
   padding: 5%;
 }
 
