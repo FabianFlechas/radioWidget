@@ -6,35 +6,53 @@ import styles from "./App.module.css";
 // Components
 import RadioWidget from './components/radioWidget';
 
+// Data
+//import radios from './RadiosBackend';
+
+
+const backRadios = [
+  {
+    id: 1,
+    radioName: "Putin FM",
+    radioFreq: "66,6",
+    coverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/6/67/ELO_Time_expanded_album_cover.jpg",
+  },
+  {
+    id: 2,
+    radioName: "Dribbble FM",
+    radioFreq: "101,2",
+    coverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/2/28/ELO.SM.1983.3.gif",
+  },  
+  {
+    id: 3,
+    radioName: "Doge FM",
+    radioFreq: "101,2",
+    coverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/b/b9/DarkHorseCover.jpg",
+  },
+  {
+    id: 4,
+    radioName: "Ballads FM",
+    radioFreq: "99,4",
+    coverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/e/e8/Dragon_Fly_%28Jefferson_Starship_album_-_cover_art%29.jpg",
+  },
+  {
+    id: 5,
+    radioName: "Maximum FM",
+    radioFreq: "142,2",
+    coverUrl:
+      "https://upload.wikimedia.org/wikipedia/en/5/5e/The_Cars_-_Heartbeat_City.jpg",
+  },
+]
 
 function App() {
-
+  
   return (
     <div  className={styles.main}>      
-      <RadioWidget />
-      
-      <div className={styles.Badge}>
-           <div className={styles.Badge__header}> 
-               
-           </div>
-
-           <div className={styles.Badge__section__name}>
-                <img 
-                className={styles.Badge__avatar}
-                src="https://media-exp1.licdn.com/dms/image/C4E03AQHzuB3Tc7U3Rg/profile-displayphoto-shrink_800_800/0/1519336288080?e=1619049600&v=beta&t=rj0pglYe4pPHM5w6I79R858r54QXf2YeWdbsJuVp-wg"
-                alt="Avatar"/>
-               <h1>FABIAN  <br /> FLECHAS</h1>
-           </div>
-
-           <div className={styles.Badge__section__info}>
-             <a href="mailto: flechasfabian@gmail.com">flechasfabian@gmail.com </a>
-                +91 9121540913                
-           </div>
-
-           <div className={styles.Badge__footer}>
-               #Begreat
-           </div>
-       </div>
+      <RadioWidget radios={backRadios} />
     </div>
   );
 }

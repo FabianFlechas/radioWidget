@@ -7,47 +7,13 @@ import RadioDetail from "./radioDetail";
 import arrow from "../images/back-arrow.png";
 import swit from "../images/switch.png";
 
-function RadioWidget() {
+import radio from "../RadiosBackend";
 
-  const state = {
-    radios: [
-      {
-        id: "1",
-        radioName: "Putin FM",
-        radioFreq: "66,6",
-        coverUrl:
-          "https://upload.wikimedia.org/wikipedia/en/6/67/ELO_Time_expanded_album_cover.jpg",
-      },
-      {
-        id: "2",
-        radioName: "Dribbble FM",
-        radioFreq: "101,2",
-        coverUrl:
-          "https://upload.wikimedia.org/wikipedia/en/2/28/ELO.SM.1983.3.gif",
-      },
-      {
-        id: "3",
-        radioName: "Doge FM",
-        radioFreq: "101,2",
-        coverUrl:
-          "https://upload.wikimedia.org/wikipedia/en/b/b9/DarkHorseCover.jpg",
-      },
-      {
-        id: "4",
-        radioName: "Ballads FM",
-        radioFreq: "99,4",
-        coverUrl:
-          "https://upload.wikimedia.org/wikipedia/en/e/e8/Dragon_Fly_%28Jefferson_Starship_album_-_cover_art%29.jpg",
-      },
-      {
-        id: "5",
-        radioName: "Maximum FM",
-        radioFreq: "142,2",
-        coverUrl:
-          "https://upload.wikimedia.org/wikipedia/en/5/5e/The_Cars_-_Heartbeat_City.jpg",
-      },
-    ],
-  };
+interface radioProps {
+  radios: radio [];
+}
+
+export const RadioWidget: React.FC<radioProps> = ({radios}:radioProps) => {
 
   const [play, setplay] = useState("");
 
@@ -96,7 +62,7 @@ function RadioWidget() {
 
       <div className={styles.radio__list}>
 
-        {state.radios.map((radio) => {
+        {radios.map((radio) => {
           return (
             <details key={radio.id} title="Rax">
               <summary
