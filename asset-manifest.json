@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/FabianFlechas/radioWidget/static/css/main.748603bf.chunk.css",
+    "main.js": "/FabianFlechas/radioWidget/static/js/main.05b254f5.chunk.js",
+    "main.js.map": "/FabianFlechas/radioWidget/static/js/main.05b254f5.chunk.js.map",
+    "runtime-main.js": "/FabianFlechas/radioWidget/static/js/runtime-main.8dd69c37.js",
+    "runtime-main.js.map": "/FabianFlechas/radioWidget/static/js/runtime-main.8dd69c37.js.map",
+    "static/js/2.531b1b3a.chunk.js": "/FabianFlechas/radioWidget/static/js/2.531b1b3a.chunk.js",
+    "static/js/2.531b1b3a.chunk.js.map": "/FabianFlechas/radioWidget/static/js/2.531b1b3a.chunk.js.map",
+    "static/js/3.2101abe8.chunk.js": "/FabianFlechas/radioWidget/static/js/3.2101abe8.chunk.js",
+    "static/js/3.2101abe8.chunk.js.map": "/FabianFlechas/radioWidget/static/js/3.2101abe8.chunk.js.map",
+    "index.html": "/FabianFlechas/radioWidget/index.html",
+    "static/css/main.748603bf.chunk.css.map": "/FabianFlechas/radioWidget/static/css/main.748603bf.chunk.css.map",
+    "static/js/2.531b1b3a.chunk.js.LICENSE.txt": "/FabianFlechas/radioWidget/static/js/2.531b1b3a.chunk.js.LICENSE.txt",
+    "static/media/back-arrow.43695ba6.png": "/FabianFlechas/radioWidget/static/media/back-arrow.43695ba6.png",
+    "static/media/minus.d5a22d2a.png": "/FabianFlechas/radioWidget/static/media/minus.d5a22d2a.png",
+    "static/media/plus.7e599da6.png": "/FabianFlechas/radioWidget/static/media/plus.7e599da6.png",
+    "static/media/switch.659e80a3.png": "/FabianFlechas/radioWidget/static/media/switch.659e80a3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8dd69c37.js",
+    "static/js/2.531b1b3a.chunk.js",
+    "static/css/main.748603bf.chunk.css",
+    "static/js/main.05b254f5.chunk.js"
+  ]
+}
