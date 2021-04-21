@@ -7,7 +7,7 @@ import RadioDetail from "./radioDetail";
 import arrow from "../images/back-arrow.png";
 import swit from "../images/switch.png";
 
-import radio from "../RadiosBackend";
+import radio from "../interfases";
 
 interface radioProps {
   radios: radio [];
