@@ -1,65 +1,11 @@
 .main {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 15%;
   background-color: #21212b;
 }
 
-
-.Badge {
-  background: #222245;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
-  border-radius: 8px 8px 8px 8px;
-  overflow: hidden;
-  height: 280px;
-}
-
-.Badge__header {
-  padding: 0.5rem 0;
-  height: 10px;
-  background: #61C0ED;
-  display: flex;
-  justify-content: center;
-}
-
-.Badge__section__name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 7px;
-  color: #dcdce4;
-}
-
-.Badge__section__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-justify: auto;
-  align-items: center;
-  background: #68688b;
-  color: #ffffff;
-  padding: 5%;
-}
-
-
-.Badge__avatar {
-  border-radius: 50%;
-  margin-right: 1rem;
-  width: 100px;
-  height: 100px;
-}
-
-.Badge__footer {
-  height: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #61C0ED;
-  font-weight: bold;
-  font-style: italic;
-  padding: 4%;
-}
 
 @media (min-width: 600px) {
 
