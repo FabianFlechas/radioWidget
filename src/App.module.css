@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15%;
+  padding: 10%;
   background-color: #21212b;
 }
 
 
 
-/* @media (min-width: 600px) {
+ @media (min-width: 600px) {
 
   .main {
     display: flex;
@@ -19,4 +19,4 @@
   }
   
 
-} */
+} 

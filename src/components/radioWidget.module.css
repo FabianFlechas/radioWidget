@@ -53,10 +53,15 @@
   .radio__list__items {
     display: grid;
     grid-template-columns: 1fr 1fr ;
+    font-family: Helvetica;
+    font-size: 20px;
   }
 
   .radio__list__items__freq {
     margin-left: auto;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 20px;
   }
 
   summary {

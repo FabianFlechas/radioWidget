@@ -5,11 +5,13 @@ import styles from "./radioDetail.module.css";
 import minus from "../images/minus.png";
 import plus from "../images/plus.png";
 
-type Props = {
+//props with cover of the radio
+type props = {
   coverUrl: string;
 };
 
-const RadioDetail: React.FC<Props> = ({ coverUrl }) => (
+// Render to the images from the accordion open
+const RadioDetail: React.FC<props> = ({coverUrl}:props) => (
   
   <div className={styles.description}>
     <button className={styles.btn}>

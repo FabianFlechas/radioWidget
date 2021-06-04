@@ -7,19 +7,17 @@ import RadioDetail from "./radioDetail";
 import arrow from "../images/back-arrow.png";
 import swit from "../images/switch.png";
 
-import radio from "../interfases";
+//Service request data
+import getRadioService from "./hooks/getRadioService";
 
-interface radioProps {
-  radios: radio [];
-}
+export const RadioWidget = () => {
+  //Set radio playing
+  const [play, setPlay] = useState("");
 
-export const RadioWidget: React.FC<radioProps> = ({radios}:radioProps) => {
-
-  const [play, setplay] = useState("");
-
-  const handleclick = (e: any) => {
+  //function to set the radio playing
+  const handleClick = (e: string) => {
     console.log(e);
-    setplay(e);
+    setPlay(e);
   };
 
   // Dinamic accordion function detail.
@@ -37,9 +35,16 @@ export const RadioWidget: React.FC<radioProps> = ({radios}:radioProps) => {
     });
   });
 
+  //Call to data service
+  const { result, loading, error } = getRadioService();
+  // Verify state of the data from fetch
+   if (loading) return <p>Loading...</p>;
+   if (error) return <p>There was an error loading your data!</p>;
+  
+
+  //Radio Widget Render
   return (
     <div className={styles.radio}>
-
       <div className={styles.radio__header}>
         <button className={styles.btn}>
           <img
@@ -60,24 +65,25 @@ export const RadioWidget: React.FC<radioProps> = ({radios}:radioProps) => {
         </button>
       </div>
 
-      <div className={styles.radio__list}>
-
-        {radios.map((radio) => {
-          return (
-            <details key={radio.id} title="Rax">
-              <summary
-                className={styles.radio__list__items}
-                onClick={() => handleclick(`${radio.radioName}`)}
-              >
-                <div> {radio.radioName} </div>
-                <div className={styles.radio__list__items__freq}>
-                  {radio.radioFreq}
-                </div>
-              </summary>
-              <RadioDetail coverUrl={radio.coverUrl} />
-            </details>
-          );
-        })}
+      {/* radio list with render of data and component radio detail  */}
+      <div className={styles.radio__list} title="Radio">
+        {result &&
+          result.map((radio) => {
+            return (
+              <details key={radio.id} >
+                <summary
+                  className={styles.radio__list__items}
+                  onClick={() => handleClick(`${radio.radioName}`)}
+                >
+                  <div> {radio.radioName} </div>
+                  <div className={styles.radio__list__items__freq}>
+                    {radio.radioFreq}
+                  </div>
+                </summary>
+                <RadioDetail coverUrl={radio.coverUrl} />
+              </details>
+            );
+          })}
       </div>
 
       <div className={styles.radio__footer}>
@@ -86,6 +92,6 @@ export const RadioWidget: React.FC<radioProps> = ({radios}:radioProps) => {
       </div>
     </div>
   );
-}
+};
 
 export default RadioWidget;

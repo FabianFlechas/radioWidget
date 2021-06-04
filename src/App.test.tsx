@@ -3,7 +3,7 @@ import { screen } from "@testing-library/react";
 import App from "./App";
 import * as ReactDOM from "react-dom";
 
-
+//test for to render the model of the radio widget
 describe(" Render Radio Widget", () => {
   let container: HTMLDivElement;
 
